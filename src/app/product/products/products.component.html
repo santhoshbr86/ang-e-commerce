@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-3" *ngFor="let product of products">
+                     <div class="card" [routerLink]="[{ outlets: { popup: ['compose'] } }]">
+                            <img class="card-img-top" src="../../../assets/dummy.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">{{product.name}}</h5>
+                              <p class="card-text">{{product.description}}</p>
+                              <a href="javascript:void(0);" class="btn btn-primary">Details</a>
+                            </div>
+                    </div>
+                
+            </div>
+    </div>
+</div>
+
+
